@@ -5,6 +5,7 @@ __pycache__/
 # Keep local exports and backups outside the published repository.
 data/*
 !data/figma-typography.json
+!data/map-coordinate-typography.json
 !data/station-detail-typography.json
 !data/charging-typography.json
 !data/terminal-detail-typography.json

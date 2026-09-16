@@ -4,6 +4,8 @@ import json, html
 ROOT = Path(__file__).resolve().parents[1]
 audit = json.loads((ROOT / 'data/figma-typography.json').read_text())
 groups = {g['id']: g for g in audit['groups']}
+map_audit = json.loads((ROOT / 'data/map-coordinate-typography.json').read_text())
+groups.update({g['id']: g for g in map_audit['groups']})
 SOURCE = audit['source']
 detail_audit = json.loads((ROOT / 'data/station-detail-typography.json').read_text())
 groups.update({g['id']: g for g in detail_audit['groups']})
@@ -57,6 +59,11 @@ modules = [
          marks=[dict(number='08',label='状态标题',indices=[0],old=13,new=14,route='top',ly=28),
                 dict(number='09',label='电站及终端信息',indices=[1],old=10,new=11,route='right',ly=100)],
          note='电量、费用、单位、预计时长及底部说明维持原字号。'),
+    dict(key='map-coordinate', title='地图坐标卡片', old='20175:274973', new='20175:275032',
+         subtitle='终端数量与分隔符统一加大一号', height=230,
+         rows=[row('终端数量',12,13,'兆、超、快、慢的数量与分隔符 / 同步加大；同类只圈一组 3/3。')],
+         marks=[dict(label='终端数量',indices=[5,6,7],old=12,new=13,route='right',ly=102,pad=2)],
+         note='兆、超、快、慢的终端数量及分隔符 / 均按此调整；「闲」、价格与会员角标维持原字号。'),
 ]
 
 def bounds(g, indices):
@@ -220,7 +227,8 @@ render_page(profile_modules,'个人中心',profile_audit['source'],'profile.html
 
 双击 `index.html` 查看首页、`charging.html` 查看充电中、`station-detail.html` 查看电站详情、`terminal-detail.html` 查看终端详情、`profile.html` 查看个人中心。顶部 Tab 顺序为：首页、充电中、电站详情、终端详情、个人中心。所有图片已保存在本地，无需联网。
 
-- 首页：5 组对照、9 处代表标注。
+- 首页：6 组对照、10 处代表标注；末尾新增地图坐标卡片，兆、超、快、慢的终端数量与分隔符 / 为 12→13，「闲」、价格及会员角标维持原字号。
+- 地图坐标卡片 [Figma 原稿](https://www.figma.com/design/YJ7KptNBMPFPQLWv4lZMTA/?node-id=20175-275090)。
 - 电站详情：13 组对照、38 处代表标注；新增基础信息下方的特色服务（12→13），更新卡券套餐、停车、超时占用费、终端列表、电站信息、车友印象及周边服务主标题（15→16）。价格信息标题在当前设计稿中仍为 15。
 - 充电中：5 组对照、13 处代表标注；顶部充电时长与充放电量为 14→15，包含超时占用费「不收取」的字号调整。
 - 终端详情：8 组对照、22 处代表标注；价格、停车、超时占用费、卡券套餐、支付方式和发票主标题为 15→16，支付选择标签为 12→13。企业账户场景屏外的「余额付」仍为 12，已注明开发时统一为 13；发票末尾右括号仍为 12，保留说明。
