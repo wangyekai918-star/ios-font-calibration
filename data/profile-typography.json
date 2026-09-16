@@ -1,0 +1,1992 @@
+{
+  "source": "https://www.figma.com/design/YJ7KptNBMPFPQLWv4lZMTA/?node-id=19923-270685",
+  "exportScale": 3,
+  "groups": [
+    {
+      "id": "19811:270182",
+      "name": "账户资产",
+      "box": [
+        8373,
+        351,
+        351,
+        81
+      ],
+      "texts": [
+        [
+          "I19811:270182;3035:740;3028:303",
+          "328.45",
+          [
+            23.375,
+            23.000091552734375,
+            41,
+            18
+          ],
+          [
+            [
+              18,
+              "D-DIN-PRO",
+              "SemiBold"
+            ],
+            [
+              12,
+              "D-DIN-PRO",
+              "SemiBold"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "hex": "#141517",
+                "opacity": 1
+              }
+            ]
+          }
+        ],
+        [
+          "I19811:270182;3035:740;3027:149",
+          "可用余额",
+          [
+            0,
+            41.000091552734375,
+            87.75,
+            17
+          ],
+          [
+            [
+              12,
+              "PingFang SC",
+              "Regular"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "hex": "#414345",
+                "opacity": 1
+              }
+            ]
+          }
+        ],
+        [
+          "I19811:270182;3035:741;3028:303",
+          "6",
+          [
+            127.125,
+            16.000091552734375,
+            9,
+            18
+          ],
+          [
+            [
+              18,
+              "D-DIN-PRO",
+              "SemiBold"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "hex": "#141517",
+                "opacity": 1
+              }
+            ]
+          }
+        ],
+        [
+          "I19811:270182;3035:741;3027:149",
+          "卡券",
+          [
+            87.75,
+            34.000091552734375,
+            87.75,
+            17
+          ],
+          [
+            [
+              12,
+              "PingFang SC",
+              "Regular"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "hex": "#414345",
+                "opacity": 1
+              }
+            ]
+          }
+        ],
+        [
+          "I19811:270182;3035:741;3027:150",
+          "3张快过期",
+          [
+            87.75,
+            51.000091552734375,
+            87.75,
+            14
+          ],
+          [
+            [
+              10,
+              "PingFang SC",
+              "Regular"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "hex": "#6F7173",
+                "opacity": 1
+              }
+            ]
+          }
+        ],
+        [
+          "I19811:270182;3035:742;3028:448;3018:1469",
+          "兑好礼",
+          [
+            223.375,
+            9.5,
+            30,
+            12
+          ],
+          [
+            [
+              10,
+              "MiSans",
+              "Semibold"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "hex": "#FFFFFF",
+                "opacity": 1
+              }
+            ]
+          }
+        ],
+        [
+          "I19811:270182;3035:742;3028:303",
+          "5054",
+          [
+            201.375,
+            23.000091552734375,
+            36,
+            18
+          ],
+          [
+            [
+              18,
+              "D-DIN-PRO",
+              "SemiBold"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "hex": "#141517",
+                "opacity": 1
+              }
+            ]
+          }
+        ],
+        [
+          "I19811:270182;3035:742;3027:149",
+          "金豆",
+          [
+            175.5,
+            41.000091552734375,
+            87.75,
+            17
+          ],
+          [
+            [
+              12,
+              "PingFang SC",
+              "Regular"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "hex": "#414345",
+                "opacity": 1
+              }
+            ]
+          }
+        ],
+        [
+          "I19811:270182;3035:818;3028:303",
+          "865",
+          [
+            293.625,
+            23.000091552734375,
+            27,
+            18
+          ],
+          [
+            [
+              18,
+              "D-DIN-PRO",
+              "SemiBold"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "hex": "#141517",
+                "opacity": 1
+              }
+            ]
+          }
+        ],
+        [
+          "I19811:270182;3035:818;3027:149",
+          "积分",
+          [
+            263.25,
+            41.000091552734375,
+            87.75,
+            17
+          ],
+          [
+            [
+              12,
+              "PingFang SC",
+              "Regular"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "hex": "#414345",
+                "opacity": 1
+              }
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "19811:270222",
+      "name": "账户资产",
+      "box": [
+        8737,
+        351,
+        351,
+        82.0000991821289
+      ],
+      "texts": [
+        [
+          "I19811:270222;3035:740;3028:303",
+          "328.45",
+          [
+            23.375,
+            23.000091552734375,
+            41,
+            18
+          ],
+          [
+            [
+              18,
+              "D-DIN-PRO",
+              "SemiBold"
+            ],
+            [
+              12,
+              "D-DIN-PRO",
+              "SemiBold"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "hex": "#141517",
+                "opacity": 1
+              }
+            ]
+          }
+        ],
+        [
+          "I19811:270222;3035:740;3027:149",
+          "可用余额",
+          [
+            0,
+            41.000091552734375,
+            87.75,
+            18
+          ],
+          [
+            [
+              13,
+              "PingFang SC",
+              "Regular"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "hex": "#414345",
+                "opacity": 1
+              }
+            ]
+          }
+        ],
+        [
+          "I19811:270222;3035:741;3028:303",
+          "6",
+          [
+            127.125,
+            16.000091552734375,
+            9,
+            18
+          ],
+          [
+            [
+              18,
+              "D-DIN-PRO",
+              "SemiBold"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "hex": "#141517",
+                "opacity": 1
+              }
+            ]
+          }
+        ],
+        [
+          "I19811:270222;3035:741;3027:149",
+          "卡券",
+          [
+            87.75,
+            34.000091552734375,
+            87.75,
+            18
+          ],
+          [
+            [
+              13,
+              "PingFang SC",
+              "Regular"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "hex": "#414345",
+                "opacity": 1
+              }
+            ]
+          }
+        ],
+        [
+          "I19811:270222;3035:741;3027:150",
+          "3张快过期",
+          [
+            87.75,
+            52.000091552734375,
+            87.75,
+            14
+          ],
+          [
+            [
+              10,
+              "PingFang SC",
+              "Regular"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "hex": "#6F7173",
+                "opacity": 1
+              }
+            ]
+          }
+        ],
+        [
+          "I19811:270222;3035:742;3028:448;3018:1469",
+          "兑好礼",
+          [
+            223.375,
+            9.5,
+            30,
+            12
+          ],
+          [
+            [
+              10,
+              "MiSans",
+              "Semibold"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "hex": "#FFFFFF",
+                "opacity": 1
+              }
+            ]
+          }
+        ],
+        [
+          "I19811:270222;3035:742;3028:303",
+          "5054",
+          [
+            201.375,
+            23.000091552734375,
+            36,
+            18
+          ],
+          [
+            [
+              18,
+              "D-DIN-PRO",
+              "SemiBold"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "hex": "#141517",
+                "opacity": 1
+              }
+            ]
+          }
+        ],
+        [
+          "I19811:270222;3035:742;3027:149",
+          "金豆",
+          [
+            175.5,
+            41.000091552734375,
+            87.75,
+            18
+          ],
+          [
+            [
+              13,
+              "PingFang SC",
+              "Regular"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "hex": "#414345",
+                "opacity": 1
+              }
+            ]
+          }
+        ],
+        [
+          "I19811:270222;3035:818;3028:303",
+          "865",
+          [
+            293.625,
+            23.000091552734375,
+            27,
+            18
+          ],
+          [
+            [
+              18,
+              "D-DIN-PRO",
+              "SemiBold"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "hex": "#141517",
+                "opacity": 1
+              }
+            ]
+          }
+        ],
+        [
+          "I19811:270222;3035:818;3027:149",
+          "积分",
+          [
+            263.25,
+            41.000091552734375,
+            87.75,
+            18
+          ],
+          [
+            [
+              13,
+              "PingFang SC",
+              "Regular"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "hex": "#414345",
+                "opacity": 1
+              }
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "19811:270305",
+      "name": "常用功能",
+      "box": [
+        8373,
+        458,
+        351,
+        73
+      ],
+      "texts": [
+        [
+          "I19811:270305;3149:10949;3149:10918",
+          "我的订单",
+          [
+            0,
+            44,
+            87.75,
+            17
+          ],
+          [
+            [
+              12,
+              "PingFang SC",
+              "Regular"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "hex": "#6F7173",
+                "opacity": 1
+              }
+            ]
+          }
+        ],
+        [
+          "I19811:270305;3149:10957;3149:10918",
+          "开发票",
+          [
+            87.75,
+            44,
+            87.75,
+            17
+          ],
+          [
+            [
+              12,
+              "PingFang SC",
+              "Regular"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "hex": "#6F7173",
+                "opacity": 1
+              }
+            ]
+          }
+        ],
+        [
+          "I19811:270305;3149:10971;3149:10918",
+          "我的收藏",
+          [
+            175.5,
+            44,
+            87.75,
+            17
+          ],
+          [
+            [
+              12,
+              "PingFang SC",
+              "Regular"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "hex": "#6F7173",
+                "opacity": 1
+              }
+            ]
+          }
+        ],
+        [
+          "I19811:270305;3149:10964;3149:10918",
+          "最近充电",
+          [
+            263.25,
+            44,
+            87.75,
+            17
+          ],
+          [
+            [
+              12,
+              "PingFang SC",
+              "Regular"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "hex": "#6F7173",
+                "opacity": 1
+              }
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "19811:270332",
+      "name": "常用功能",
+      "box": [
+        8737,
+        458,
+        351,
+        73
+      ],
+      "texts": [
+        [
+          "I19811:270332;3149:10949;3149:10918",
+          "我的订单",
+          [
+            0,
+            43.5,
+            87.75,
+            18
+          ],
+          [
+            [
+              13,
+              "PingFang SC",
+              "Regular"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "hex": "#414345",
+                "opacity": 1
+              }
+            ]
+          }
+        ],
+        [
+          "I19811:270332;3149:10957;3149:10918",
+          "开发票",
+          [
+            87.75,
+            43.5,
+            87.75,
+            18
+          ],
+          [
+            [
+              13,
+              "PingFang SC",
+              "Regular"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "hex": "#414345",
+                "opacity": 1
+              }
+            ]
+          }
+        ],
+        [
+          "I19811:270332;3149:10971;3149:10918",
+          "我的收藏",
+          [
+            175.5,
+            43.5,
+            87.75,
+            18
+          ],
+          [
+            [
+              13,
+              "PingFang SC",
+              "Regular"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "hex": "#414345",
+                "opacity": 1
+              }
+            ]
+          }
+        ],
+        [
+          "I19811:270332;3149:10964;3149:10918",
+          "最近充电",
+          [
+            263.25,
+            43.5,
+            87.75,
+            18
+          ],
+          [
+            [
+              13,
+              "PingFang SC",
+              "Regular"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "hex": "#414345",
+                "opacity": 1
+              }
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "19811:270359",
+      "name": "福利活动",
+      "box": [
+        8372,
+        556,
+        351,
+        126
+      ],
+      "texts": [
+        [
+          "I19811:270359;3155:14595;3155:14399",
+          "认证营运车",
+          [
+            188.5,
+            18,
+            60,
+            16
+          ],
+          [
+            [
+              12,
+              "PingFang SC",
+              "Semibold"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "hex": "#141517",
+                "opacity": 1
+              }
+            ]
+          }
+        ],
+        [
+          "I19811:270359;3155:14595;3155:14401",
+          "享优惠特权",
+          [
+            188.5,
+            36,
+            55,
+            14
+          ],
+          [
+            [
+              11,
+              "PingFang SC",
+              "Regular"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "hex": "#6F7173",
+                "opacity": 1
+              }
+            ]
+          }
+        ],
+        [
+          "I19811:270359;3155:14594;3155:14410",
+          "邀好友赚红包",
+          [
+            188.5,
+            76,
+            72,
+            16
+          ],
+          [
+            [
+              12,
+              "PingFang SC",
+              "Semibold"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "hex": "#141517",
+                "opacity": 1
+              }
+            ]
+          }
+        ],
+        [
+          "I19811:270359;3155:14594;3155:14412",
+          "一起领好礼",
+          [
+            188.5,
+            94,
+            55,
+            14
+          ],
+          [
+            [
+              11,
+              "PingFang SC",
+              "Regular"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "hex": "#6F7173",
+                "opacity": 1
+              }
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "19811:270408",
+      "name": "福利活动",
+      "box": [
+        8737,
+        556,
+        351,
+        126
+      ],
+      "texts": [
+        [
+          "I19811:270408;3155:14595;3155:14399",
+          "认证营运车",
+          [
+            188.5,
+            18,
+            65,
+            16
+          ],
+          [
+            [
+              13,
+              "PingFang SC",
+              "Semibold"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "hex": "#141517",
+                "opacity": 1
+              }
+            ]
+          }
+        ],
+        [
+          "I19811:270408;3155:14595;3155:14401",
+          "享优惠特权",
+          [
+            188.5,
+            36,
+            55,
+            14
+          ],
+          [
+            [
+              11,
+              "PingFang SC",
+              "Regular"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "hex": "#6F7173",
+                "opacity": 1
+              }
+            ]
+          }
+        ],
+        [
+          "I19811:270408;3155:14594;3155:14410",
+          "邀好友赚红包",
+          [
+            188.5,
+            76,
+            78,
+            16
+          ],
+          [
+            [
+              13,
+              "PingFang SC",
+              "Semibold"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "hex": "#141517",
+                "opacity": 1
+              }
+            ]
+          }
+        ],
+        [
+          "I19811:270408;3155:14594;3155:14412",
+          "一起领好礼",
+          [
+            188.5,
+            94,
+            55,
+            14
+          ],
+          [
+            [
+              11,
+              "PingFang SC",
+              "Regular"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "hex": "#6F7173",
+                "opacity": 1
+              }
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "19923:270457",
+      "name": "个人桩",
+      "box": [
+        8374,
+        708,
+        351,
+        69
+      ],
+      "texts": [
+        [
+          "I19923:270457;3149:11169",
+          "个人桩",
+          [
+            20.874617010354996,
+            25.5,
+            45.799211114645004,
+            17.98224914073944
+          ],
+          [
+            [
+              15,
+              "Alimama ShuHeiTi",
+              "Bold"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "GRADIENT_LINEAR",
+                "visible": true,
+                "hex": null,
+                "opacity": 1
+              }
+            ]
+          }
+        ],
+        [
+          "I19923:270457;3149:11175;3090:4091",
+          "我的桩",
+          [
+            87.75,
+            40,
+            87.75,
+            17
+          ],
+          [
+            [
+              12,
+              "PingFang SC",
+              "Regular"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "hex": "#141517",
+                "opacity": 1
+              }
+            ]
+          }
+        ],
+        [
+          "I19923:270457;3149:11176;3090:6513",
+          "收到的预约",
+          [
+            175.5,
+            40,
+            87.75,
+            17
+          ],
+          [
+            [
+              12,
+              "PingFang SC",
+              "Regular"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "hex": "#141517",
+                "opacity": 1
+              }
+            ]
+          }
+        ],
+        [
+          "I19923:270457;3149:11177;3090:4091",
+          "故障报修",
+          [
+            263.25,
+            40,
+            87.75,
+            17
+          ],
+          [
+            [
+              12,
+              "PingFang SC",
+              "Regular"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "hex": "#141517",
+                "opacity": 1
+              }
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "19923:270488",
+      "name": "个人桩",
+      "box": [
+        8737,
+        708,
+        351,
+        69
+      ],
+      "texts": [
+        [
+          "I19923:270488;3149:11169",
+          "个人桩",
+          [
+            20.874617010354996,
+            25.5,
+            45.799211114645004,
+            17.98224914073944
+          ],
+          [
+            [
+              15,
+              "Alimama ShuHeiTi",
+              "Bold"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "GRADIENT_LINEAR",
+                "visible": true,
+                "hex": null,
+                "opacity": 1
+              }
+            ]
+          }
+        ],
+        [
+          "I19923:270488;3149:11175;3090:4091",
+          "我的桩",
+          [
+            87.75,
+            40,
+            87.75,
+            18
+          ],
+          [
+            [
+              13,
+              "PingFang SC",
+              "Regular"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "hex": "#141517",
+                "opacity": 1
+              }
+            ]
+          }
+        ],
+        [
+          "I19923:270488;3149:11176;3090:6513",
+          "收到的预约",
+          [
+            175.5,
+            40,
+            87.75,
+            18
+          ],
+          [
+            [
+              13,
+              "PingFang SC",
+              "Regular"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "hex": "#141517",
+                "opacity": 1
+              }
+            ]
+          }
+        ],
+        [
+          "I19923:270488;3149:11177;3090:4091",
+          "故障报修",
+          [
+            263.25,
+            40,
+            87.75,
+            18
+          ],
+          [
+            [
+              13,
+              "PingFang SC",
+              "Regular"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "hex": "#141517",
+                "opacity": 1
+              }
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "19923:270519",
+      "name": "更多功能",
+      "box": [
+        8377,
+        804,
+        351,
+        207
+      ],
+      "texts": [
+        [
+          "I19923:270519;3149:11019;3090:4091",
+          "即插即充",
+          [
+            0,
+            40,
+            87.75,
+            17
+          ],
+          [
+            [
+              12,
+              "PingFang SC",
+              "Regular"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "hex": "#141517",
+                "opacity": 1
+              }
+            ]
+          }
+        ],
+        [
+          "I19923:270519;3149:11023;3090:4091",
+          "月账单",
+          [
+            87.75,
+            40,
+            87.75,
+            17
+          ],
+          [
+            [
+              12,
+              "PingFang SC",
+              "Regular"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "hex": "#141517",
+                "opacity": 1
+              }
+            ]
+          }
+        ],
+        [
+          "I19923:270519;3149:11022;3090:4091",
+          "充电设置",
+          [
+            175.5,
+            40,
+            87.75,
+            17
+          ],
+          [
+            [
+              12,
+              "PingFang SC",
+              "Regular"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "hex": "#141517",
+                "opacity": 1
+              }
+            ]
+          }
+        ],
+        [
+          "I19923:270519;3149:11020;3090:4091",
+          "V2G",
+          [
+            263.25,
+            40,
+            87.75,
+            17
+          ],
+          [
+            [
+              12,
+              "PingFang SC",
+              "Regular"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "hex": "#141517",
+                "opacity": 1
+              }
+            ]
+          }
+        ],
+        [
+          "I19923:270519;3450:17158;3090:4091",
+          "电池长效守护",
+          [
+            0,
+            109,
+            87.75,
+            17
+          ],
+          [
+            [
+              12,
+              "PingFang SC",
+              "Regular"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "hex": "#141517",
+                "opacity": 1
+              }
+            ]
+          }
+        ],
+        [
+          "I19923:270519;3149:11018;3090:4091",
+          "行程规划",
+          [
+            87.75,
+            109,
+            87.75,
+            17
+          ],
+          [
+            [
+              12,
+              "PingFang SC",
+              "Regular"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "hex": "#141517",
+                "opacity": 1
+              }
+            ]
+          }
+        ],
+        [
+          "I19923:270519;3149:11025;3090:4091",
+          "我的预约",
+          [
+            175.5,
+            109,
+            87.75,
+            17
+          ],
+          [
+            [
+              12,
+              "PingFang SC",
+              "Regular"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "hex": "#141517",
+                "opacity": 1
+              }
+            ]
+          }
+        ],
+        [
+          "I19923:270519;3149:11026;3090:4091",
+          "我的评价",
+          [
+            263.25,
+            109,
+            87.75,
+            17
+          ],
+          [
+            [
+              12,
+              "PingFang SC",
+              "Regular"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "hex": "#141517",
+                "opacity": 1
+              }
+            ]
+          }
+        ],
+        [
+          "I19923:270519;3149:11024;3090:4091",
+          "申请建桩",
+          [
+            0,
+            178,
+            87.75,
+            17
+          ],
+          [
+            [
+              12,
+              "PingFang SC",
+              "Regular"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "hex": "#141517",
+                "opacity": 1
+              }
+            ]
+          }
+        ],
+        [
+          "I19923:270519;3149:11027;3090:4091",
+          "更多服务",
+          [
+            87.75,
+            178,
+            87.75,
+            17
+          ],
+          [
+            [
+              12,
+              "PingFang SC",
+              "Regular"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "hex": "#141517",
+                "opacity": 1
+              }
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "id": "19923:270602",
+      "name": "更多功能",
+      "box": [
+        8742,
+        802,
+        351,
+        207
+      ],
+      "texts": [
+        [
+          "I19923:270602;3149:11019;3090:4091",
+          "即插即充",
+          [
+            0,
+            40,
+            87.75,
+            18
+          ],
+          [
+            [
+              13,
+              "PingFang SC",
+              "Regular"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "hex": "#141517",
+                "opacity": 1
+              }
+            ]
+          }
+        ],
+        [
+          "I19923:270602;3149:11023;3090:4091",
+          "月账单",
+          [
+            87.75,
+            40,
+            87.75,
+            18
+          ],
+          [
+            [
+              13,
+              "PingFang SC",
+              "Regular"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "hex": "#141517",
+                "opacity": 1
+              }
+            ]
+          }
+        ],
+        [
+          "I19923:270602;3149:11022;3090:4091",
+          "充电设置",
+          [
+            175.5,
+            40,
+            87.75,
+            18
+          ],
+          [
+            [
+              13,
+              "PingFang SC",
+              "Regular"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "hex": "#141517",
+                "opacity": 1
+              }
+            ]
+          }
+        ],
+        [
+          "I19923:270602;3149:11020;3090:4091",
+          "V2G",
+          [
+            263.25,
+            40,
+            87.75,
+            18
+          ],
+          [
+            [
+              13,
+              "PingFang SC",
+              "Regular"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "hex": "#141517",
+                "opacity": 1
+              }
+            ]
+          }
+        ],
+        [
+          "I19923:270602;3450:17158;3090:4091",
+          "电池长效守护",
+          [
+            0,
+            109,
+            87.75,
+            18
+          ],
+          [
+            [
+              13,
+              "PingFang SC",
+              "Regular"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "hex": "#141517",
+                "opacity": 1
+              }
+            ]
+          }
+        ],
+        [
+          "I19923:270602;3149:11018;3090:4091",
+          "行程规划",
+          [
+            87.75,
+            109,
+            87.75,
+            18
+          ],
+          [
+            [
+              13,
+              "PingFang SC",
+              "Regular"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "hex": "#141517",
+                "opacity": 1
+              }
+            ]
+          }
+        ],
+        [
+          "I19923:270602;3149:11025;3090:4091",
+          "我的预约",
+          [
+            175.5,
+            109,
+            87.75,
+            18
+          ],
+          [
+            [
+              13,
+              "PingFang SC",
+              "Regular"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "hex": "#141517",
+                "opacity": 1
+              }
+            ]
+          }
+        ],
+        [
+          "I19923:270602;3149:11026;3090:4091",
+          "我的评价",
+          [
+            263.25,
+            109,
+            87.75,
+            18
+          ],
+          [
+            [
+              13,
+              "PingFang SC",
+              "Regular"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "hex": "#141517",
+                "opacity": 1
+              }
+            ]
+          }
+        ],
+        [
+          "I19923:270602;3149:11024;3090:4091",
+          "申请建桩",
+          [
+            0,
+            178,
+            87.75,
+            18
+          ],
+          [
+            [
+              13,
+              "PingFang SC",
+              "Regular"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "hex": "#141517",
+                "opacity": 1
+              }
+            ]
+          }
+        ],
+        [
+          "I19923:270602;3149:11027;3090:4091",
+          "更多服务",
+          [
+            87.75,
+            178,
+            87.75,
+            18
+          ],
+          [
+            [
+              13,
+              "PingFang SC",
+              "Regular"
+            ]
+          ],
+          {
+            "opacity": 1,
+            "ancestorOpacity": 1,
+            "fills": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "hex": "#141517",
+                "opacity": 1
+              }
+            ]
+          }
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+
+# Keep local exports and backups outside the published repository.
+data/*
+!data/figma-typography.json
+!data/station-detail-typography.json
+!data/charging-typography.json
+!data/terminal-detail-typography.json
+!data/profile-typography.json
+!data/changes.json
+!data/station-detail-changes.json
+!data/charging-changes.json
+!data/terminal-detail-changes.json
+!data/profile-changes.json
+
+# Source exports already represented by final comparison images.
+assets/terminal-detail-overview@3x.png
+assets/station-detail-overview@3x.png
+assets/station-navigation-overview@3x.png
+assets/filter-new-native@3x.png
+assets/price-times-*@3x.png
+assets/price-flat-*@3x.png

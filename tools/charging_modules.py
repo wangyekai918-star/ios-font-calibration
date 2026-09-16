@@ -1,0 +1,50 @@
+def row(name, old, new, note, **options):
+    return dict(name=name, old=old, new=new, note=note, **options)
+
+
+modules = [
+    dict(key='charging-overview',title='顶部充电数据',old='19811:267498',new='19811:267527',height=224,
+         subtitle='充电时长、充电量与放电量加大一号',
+         rows=[row('充电时长与充放电量',14,15,'「00:25:28」「48.502度」「25.423度」一起调整，包含数值与单位；同类只圈充电时长一个代表。')],
+         marks=[dict(label='时长与充放电量',indices=[5],old=14,new=15,route='bottom',ly=180)],
+         note='顶部电量数字仍为 60，百分号仍为 20；预计状态文字仍为 16、时间仍为 18；充放电图标文字仍为 9。'),
+    dict(key='charging-power',title='实时功率卡片',old='19811:267379',new='19811:267439',height=232,
+         subtitle='实时功率标题与充电曲线入口加大一号',
+         rows=[row('实时功率标题',12,13,'「实时功率」文字加大一号。'),
+               row('充电曲线入口',12,13,'右侧「充电曲线」入口同步调整，单独圈选。')],
+         marks=[dict(label='实时功率标题',indices=[2],old=12,new=13,route='custom',lead='top',bend_y=94,ly=87),
+                dict(label='充电曲线入口',indices=[9],old=12,new=13,route='right',ly=135)],
+         note='功率数字、电压、电流、单位及上下安全保障横幅维持原字号。'),
+    dict(key='charging-protection',title='电池长效守护',old='19811:267743',new='19811:267764',height=160,
+         subtitle='服务名称与权益说明一起加大一号',
+         rows=[row('服务名称与权益说明',12,13,'「电池长效守护」和「衰减补偿最高3万元」均调整；名称与说明一起圈选。')],
+         marks=[dict(label='名称与权益说明',indices=[0,1],old=12,new=13,route='top',ly=30)],
+         note='购买价格数字仍为 16，人民币符号及「/份」仍为 10。'),
+    dict(key='charging-billing',title='充电任务与计费',old='19811:267235',new='19811:267301',height=290,
+         subtitle='任务、计费标题及停车与超时费说明加大一号',
+         rows=[row('充电任务提示',12,13,'任务文案与奖励金额一起调整，包含「再充23度电可得」和「3元券」。'),
+               row('费用项目标题',12,13,'充电费用、停车费用、超时占用费统一调整；只圈充电费用标题。'),
+               row('停车费用说明',14,15,'「以现场为准」整句加大一号。'),
+               row('超时占用费「不收取」',14,15,'不收取超时占用费时，状态文字由 14 调整为 15，单独圈选。'),
+               row('费用补充说明',11,12,'预付金额与停车车牌信息一起调整；只圈预付金额一处。')],
+         marks=[dict(label='充电任务提示',indices=[0,1],old=12,new=13,route='top',ly=24),
+                dict(label='费用项目标题',indices=[2],old=12,new=13,route='custom',lead='top',bend_y=94,ly=77,lane=405),
+                dict(label='超时费不收取',indices=[10],old=14,new=15,route='right',ly=130,lane=416),
+                dict(label='停车费用说明',indices=[7],old=14,new=15,route='custom-right',via_x=278,bend_y=187,ly=183),
+                dict(label='费用补充说明',indices=[5],old=11,new=12,route='bottom',ly=236)],
+         note='充电金额数字仍为 22，单位「元」仍为 12。'),
+    dict(key='charging-order',title='充电订单卡片',old='19811:267784',new='19811:267812',height=252,
+         subtitle='充电状态、电站信息、费用电量与车牌分别校准',
+         rows=[row('充电状态与进度',12,13,'「充电中」及百分比数字一起加大一号。'),
+               row('电站及终端名称',14,15,'电站名称与后接的终端名称一起调整。'),
+               row('费用与电量信息',12,13,'费用、电量的字段、数值及单位一起调整。'),
+               row('车牌信息',12,13,'底部车牌文字加大一号。')],
+         marks=[dict(label='充电状态与进度',indices=[0,1],old=12,new=13,route='top',ly=24,pad=1),
+                dict(label='电站及终端名称',indices=[2,3],old=14,new=15,route='custom',lead='top',bend_y=86,ly=87,pad=1),
+                dict(label='费用与电量信息',indices=[4,5,6,7],old=12,new=13,route='right',ly=142,pad=1),
+                dict(label='车牌信息',indices=[8],old=12,new=13,route='bottom',ly=199,pad=1)],
+         note='同一卡片内的状态、主标题与辅助信息分别按对应字号调整。'),
+]
+
+for number, mark in enumerate((mark for module in modules for mark in module['marks']), 1):
+    mark['number'] = f'{number:02}'

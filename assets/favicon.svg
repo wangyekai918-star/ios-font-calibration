@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <title>APP8.0 iOS 字号校准</title>
+  <rect width="64" height="64" rx="15" fill="#2168F5"/>
+  <path fill="#FFFFFF" fill-rule="evenodd" d="M10 46 20 17H27L37 46H30L28 39H19L17 46H10ZM20.8 33H26.2L23.5 24 20.8 33Z"/>
+  <path fill="#FFFFFF" fill-rule="evenodd" d="M48 26H54V46H48V44.5C46.9 45.5 45.3 46 44.5 46 39.8 46 36 41.5 36 36S39.8 26 44.5 26C45.8 26 47 26.4 48 27.1V26ZM48 36C48 33.2 46.4 31 44.5 31S41 33.2 41 36 42.6 41 44.5 41 48 38.8 48 36Z"/>
+</svg>

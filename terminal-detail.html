@@ -1,0 +1,260 @@
+<!doctype html>
+    <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="APP8.0 iOS 字号校准：Figma 3倍原图、新旧字号对照及红线标注"><title>终端详情 · APP8.0 iOS 字号校准</title><link rel="icon" href="favicon.ico?v=1" sizes="16x16 32x32 48x48"><link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png?v=1"><link rel="icon" type="image/svg+xml" sizes="any" href="assets/favicon.svg?v=1"><style>
+
+:root{--brand:#00ace5;--brand-soft:#e8f8fd;--ink:#16181c;--ink-2:#414345;--ink-3:#6e737c;--line:#e5e7eb;--canvas:#f5f6f8;--red:#ff625b;--board:#2f3236;--shadow:0 12px 32px rgba(31,42,55,.04);--blue:#2168f5;--blue-soft:#eef4ff;--directory-width:186px;--layout-gap:24px}
+.mark-color{font-size:12px;font-weight:500}.color-detail{display:flex;align-items:center;gap:6px;margin-top:7px;font-size:11px;font-weight:500;color:var(--ink-3);white-space:nowrap}.color-detail i{width:11px;height:11px;border-radius:3px;border:1px solid #00000015;flex:none}.summary-color{margin-top:5px;font-size:11px;white-space:nowrap}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scrollbar-gutter:stable}
+body{margin:0;min-width:320px;color:var(--ink);background:radial-gradient(ellipse 1100px 680px at 8% 0%,rgba(33,104,245,.065),transparent 75%),var(--canvas);font:14px/1.6 -apple-system,BlinkMacSystemFont,"PingFang SC","Helvetica Neue",Arial,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}a:focus-visible{outline:3px solid #2168f54d;outline-offset:4px}h1,h2,h3,p,figure{margin:0}
+.header-inner{max-width:1740px;margin:auto;padding:64px 36px 0;display:grid;grid-template-columns:var(--directory-width) minmax(0,1fr);column-gap:var(--layout-gap)}
+.header-inner>*{grid-column:-2/-1;min-width:0}
+h1{font-size:clamp(36px,4.5vw,58px);font-weight:750;line-height:1.12;letter-spacing:-.045em}
+.intro{color:var(--ink-3);margin-top:12px;font-size:14px;line-height:1.85}
+.hero-copy{max-width:850px;margin-top:18px;color:var(--ink-3);font-size:16px;line-height:1.75}
+.summary-pill{justify-self:start;display:inline-flex;align-items:center;gap:9px;margin-top:26px;padding:8px 13px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.72);color:#525861;font-size:12px;font-weight:550}
+.summary-pill strong{color:var(--ink);font-weight:650}.status-dot{width:6px;height:6px;flex:none;border-radius:50%;background:#25aa61;box-shadow:0 0 0 4px rgba(37,170,97,.1);margin:0 3px}
+.page-navigation{position:sticky;top:0;z-index:30;margin-top:32px;padding:12px 0;background:var(--canvas);box-shadow:0 1px 0 rgba(31,42,55,.07)}
+.navigation-inner{max-width:1740px;margin:auto;padding:0 36px;display:grid;grid-template-columns:var(--directory-width) minmax(0,1fr);column-gap:var(--layout-gap)}
+.header-bottom{grid-column:-2/-1;min-width:0;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.page-switcher{display:inline-flex;gap:6px;padding:5px;border:1px solid #d9e0ea;border-radius:15px;background:#fff;box-shadow:0 4px 16px rgba(31,42,55,.05)}
+.page-switcher a{display:flex;align-items:center;justify-content:center;min-width:104px;min-height:46px;padding:0 26px;border-radius:10px;font-size:16px;font-weight:700;color:#5a626e;white-space:nowrap;transition:color .18s,background .18s,box-shadow .18s}
+.page-switcher a:hover{color:var(--blue);background:var(--blue-soft)}.page-switcher a.active{color:#fff;background:var(--blue);box-shadow:0 3px 9px rgba(33,104,245,.24)}.page-switcher a.active:hover{background:#185bdb}
+.header-links{display:flex;align-items:center;gap:20px}.text-link{font-size:12px;color:#7e8590}.text-link:hover{color:var(--blue)}
+.layout{max-width:1740px;margin:0 auto;padding:28px 36px 64px;display:grid;grid-template-columns:var(--directory-width) minmax(0,1fr);gap:var(--layout-gap)}.directory{position:sticky;top:24px;max-height:calc(100vh - 48px);align-self:start;border:1px solid var(--line);border-radius:14px;background:#fff;box-shadow:var(--shadow);overflow:auto}.directory-title{padding:18px 18px 15px;font-weight:650;border-bottom:1px solid var(--line)}.module-list{padding:9px}.module-link{display:flex;align-items:center;gap:10px;padding:11px 10px;font-size:13px;color:var(--ink-3);border-radius:8px;white-space:nowrap}.module-link span{font-size:11px;color:#a0a6ad;font-variant-numeric:tabular-nums}.module-link:hover{background:#f7f9fa}.module-link.active{color:#007fab;background:var(--brand-soft);font-weight:600}.module-link.active span{color:var(--brand)}.directory-foot{font-size:11px;color:#969da4;border-top:1px solid var(--line);padding:14px 18px;line-height:1.7}.content{min-width:0;display:grid;gap:24px}.card{background:white;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);overflow:hidden}.module{scroll-margin-top:24px}.module-head{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:24px 26px;border-bottom:1px solid var(--line)}.module-heading{display:flex;align-items:center;gap:13px}.module-index{display:grid;place-items:center;width:38px;height:38px;background:var(--brand-soft);color:#0085b1;border-radius:10px;font-weight:650;font-size:13px;flex:none}h2{font-size:23px;letter-spacing:-.35px;line-height:1.4}.module-heading p{color:var(--ink-3);font-size:12px;margin-top:5px}.module-body{padding:22px 26px 24px}.compare-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.figure-card{background:var(--board);border:1px solid #262a2e;border-radius:11px;overflow:hidden;min-width:0}.figure-card figcaption{height:45px;border-bottom:1px solid #ffffff14;display:flex;align-items:center;justify-content:space-between;padding:0 16px}.version-label{display:flex;gap:8px;align-items:center;color:#f5f6f8;font-size:13px;font-weight:600}.version-label i{width:7px;height:7px;border-radius:50%;background:#ffad4f}.new .version-label i{background:#4dd5ff}.version-detail{color:#a1a8b0;font-size:11px}.figure-board{position:relative;width:100%;overflow:hidden}.design-image{position:absolute;display:block;object-fit:contain}.overlay{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;overflow:visible}.annotation rect{stroke:var(--red);stroke-width:1.5;fill:none}.annotation path{fill:none;stroke:var(--red);stroke-width:1.1;stroke-linejoin:round;stroke-linecap:round}.annotation .line-dot{fill:var(--red)}.annotation text{fill:#ff827d;stroke:none;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif}.mark-label{font-size:12px;font-weight:500}.annotation .mark-value{font-size:22px;font-weight:650;fill:#ff716a}.mark-unit{font-size:11px;font-weight:450}h3{font-size:15px;margin:23px 0 10px;font-weight:600}.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:8px}table{border-collapse:collapse;width:100%;font-size:12px;text-align:left;line-height:1.65}th,td{padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:middle}thead th{background:#f8fafb;color:#687078;font-weight:500;white-space:nowrap}tbody th{font-weight:550;color:#33393f;width:18%;min-width:130px}td{color:#747b83}tbody tr:last-child>*{border-bottom:0}.old-size,.new-size{font-size:16px;white-space:nowrap;width:12%;color:#6c737c;font-variant-numeric:tabular-nums}.new-size{font-weight:650;color:#008ab7}td small{font-size:11px;font-weight:400}td em{display:inline-block;font-size:10px;font-style:normal;background:#eaf8fc;border-radius:4px;padding:1px 5px;margin-left:8px;color:#0093bf;vertical-align:2px}.module-note{color:#9ba1a8;font-size:11px;line-height:1.8;margin-top:12px;padding-left:12px;border-left:2px solid #e6eaed}.summary-head{padding:24px 26px 8px}.summary-body{padding:16px 26px 26px}.summary tbody th{width:30%}.summary td b{color:#008ab7}.footer-note{margin-top:15px;color:#9299a0;font-size:12px}.footer-note a{color:#008ab7}
+@media(min-width:1500px){.module-head{padding:25px 28px}.module-body{padding:24px 28px 26px}.figure-card figcaption{height:49px}.version-label{font-size:14px}}
+@media(max-width:1199px){.layout{grid-template-columns:1fr;max-width:1240px;padding:24px 28px 50px}.directory{display:none}.module-body{padding:20px}.module-head{padding:22px}.header-inner{padding:56px 28px 0;grid-template-columns:minmax(0,1fr)}}
+@media(max-width:740px){.header-inner{padding:40px 12px 0}.hero-copy{font-size:14px;margin-top:14px}.summary-pill{margin-top:20px}.header-bottom{margin-top:28px;gap:12px;flex-wrap:wrap}.page-switcher{width:100%}.page-switcher a{flex:1;min-width:0;min-height:44px;padding:0 12px;font-size:15px}.header-links{gap:14px}.layout{padding:20px 12px 40px}.content{gap:16px}.module-head{padding:18px 16px}.module-body{padding:14px}.module-index{width:32px;height:32px;border-radius:8px}h2{font-size:19px}.module-heading{gap:10px}.module-heading p{font-size:11px}.compare-grid{grid-template-columns:1fr;gap:12px}.figure-card figcaption{height:42px}table{min-width:590px}th,td{padding:10px 12px}.summary table{min-width:440px}.summary-head{padding:20px 18px 6px}.summary-body{padding:14px 18px 20px}}
+@media print{.header-bottom,.directory{display:none!important}.layout{display:block;padding:0}.header-inner{padding:0 0 25px;grid-template-columns:minmax(0,1fr)}.module{break-inside:avoid;margin-bottom:20px;box-shadow:none}.module-head{padding:14px}.module-body{padding:14px}.compare-grid{grid-template-columns:repeat(2,minmax(0,1fr))}body{-webkit-print-color-adjust:exact;print-color-adjust:exact;background:#fff}.card{border-radius:8px}table{min-width:0}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+td em.content-change{background:#fff4df;color:#9b6a19}
+
+:root{--navigation-height:82px;--anchor-offset:calc(var(--navigation-height) + 24px)}
+.layout{padding-top:16px}
+.directory{top:var(--anchor-offset);max-height:calc(100vh - var(--anchor-offset) - 24px)}
+.module{scroll-margin-top:var(--anchor-offset)}
+@media(max-width:1199px){.navigation-inner{padding:0 28px;grid-template-columns:minmax(0,1fr)}.layout{padding-top:12px}}
+@media(max-width:740px){.page-navigation{margin-top:16px}.navigation-inner{padding:0 12px}.header-bottom{margin-top:0}.layout{padding-top:8px}}
+@media print{.page-navigation{display:none!important}}
+</style></head>
+    <body><header class="page-header"><div class="header-inner">
+    <h1>APP8.0 iOS 字号校准</h1><p class="hero-copy">针对 iOS 大屏阅读体验，校准部分文字字号。</p>
+    <div class="summary-pill"><i class="status-dot" aria-hidden="true"></i><strong>终端详情 · 8 组对照</strong><span>左侧原设计 · 右侧校准后</span></div>
+    </div></header>
+    <div class="page-navigation"><div class="navigation-inner">
+    <div class="header-bottom"><nav class="page-switcher" aria-label="页面切换"><a href="index.html" class="" >首页</a><a href="charging.html" class="" >充电中</a><a href="station-detail.html" class="" >电站详情</a><a href="terminal-detail.html" class="active" aria-current="page">终端详情</a><a href="profile.html" class="" >个人中心</a></nav><div class="header-links"><a class="text-link" href="https://www.figma.com/design/YJ7KptNBMPFPQLWv4lZMTA/?node-id=19811-267894" target="_blank" rel="noopener">Figma 原稿 ↗</a></div></div>
+    </div></div>
+    <div class="layout"><aside class="directory"><div class="directory-title">对照目录</div><nav class="module-list" aria-label="对照模块"><a class="module-link" href="#terminal-card"><span>01</span>终端信息卡片</a><a class="module-link" href="#terminal-price"><span>02</span>价格信息</a><a class="module-link" href="#terminal-parking"><span>03</span>停车参考价</a><a class="module-link" href="#terminal-overtime"><span>04</span>超时占用费</a><a class="module-link" href="#terminal-coupons"><span>05</span>卡券与套餐</a><a class="module-link" href="#terminal-payment"><span>06</span>支付方式</a><a class="module-link" href="#terminal-invoice"><span>07</span>发票信息</a><a class="module-link" href="#terminal-insurance"><span>08</span>特无忧服务</a></nav><div class="directory-foot">同类元素只圈一个代表<br>相同调整不重复圈选</div></aside><main class="content"><section id="terminal-card" class="module card"><div class="module-head"><div class="module-heading"><span class="module-index">01</span><div><h2>终端信息卡片</h2><p>详情入口、最近充电提示与包租说明加大一号</p></div></div></div>
+    <div class="module-body"><div class="compare-grid"><figure class="figure-card old"><figcaption><span class="version-label"><i></i>原设计</span><span class="version-detail">原字号</span></figcaption>
+<div class="figure-board" style="aspect-ratio:584/250">
+<img class="design-image" src="assets/terminal-card-old@3x.png" width="1077" height="438" style="left:4.794520547945205%;top:22.400000000000002%;width:61.47260273972602%;height:58.4%" alt="终端信息卡片 · 原设计 · Figma 3倍原图">
+<svg class="overlay" viewBox="0 0 584 250" aria-label="终端信息卡片字号标注"><g class="annotation"><rect x="313.0" y="115.5" width="56" height="23.0" rx="5"/>
+<path d="M 369.0 127.0 H 409 V 90 H 426"/><circle cx="426" cy="90" r="2.5" class="line-dot"/>
+<text x="435" y="86" class="mark-label">终端详情入口</text>
+<text x="435" y="110" class="mark-value">12<tspan class="mark-unit"> px</tspan></text></g><g class="annotation"><rect x="50.0" y="130" width="102" height="23" rx="5"/>
+<path d="M 152.0 141.5 H 405 V 144 H 426"/><circle cx="426" cy="144" r="2.5" class="line-dot"/>
+<text x="435" y="140" class="mark-label">最近充电提示</text>
+<text x="435" y="164" class="mark-value">12<tspan class="mark-unit"> px</tspan></text></g><g class="annotation"><rect x="36.0" y="155" width="343" height="38" rx="5"/>
+<path d="M 379.0 174.0 H 409 V 198 H 426"/><circle cx="426" cy="198" r="2.5" class="line-dot"/>
+<text x="435" y="194" class="mark-label">终端包租说明</text>
+<text x="435" y="218" class="mark-value">12<tspan class="mark-unit"> px</tspan></text></g></svg></div></figure><figure class="figure-card new"><figcaption><span class="version-label"><i></i>视觉校准后</span><span class="version-detail">字号 +1</span></figcaption>
+<div class="figure-board" style="aspect-ratio:584/250">
+<img class="design-image" src="assets/terminal-card-new@3x.png" width="1077" height="441" style="left:4.794520547945205%;top:22.400000000000002%;width:61.47260273972602%;height:58.8%" alt="终端信息卡片 · 视觉校准后 · Figma 3倍原图">
+<svg class="overlay" viewBox="0 0 584 250" aria-label="终端信息卡片字号标注"><g class="annotation"><rect x="309.0" y="115.5" width="60" height="24.0" rx="5"/>
+<path d="M 369.0 127.5 H 409 V 90 H 426"/><circle cx="426" cy="90" r="2.5" class="line-dot"/>
+<text x="435" y="86" class="mark-label">终端详情入口</text>
+<text x="435" y="110" class="mark-value">13<tspan class="mark-unit"> px</tspan></text></g><g class="annotation"><rect x="50.0" y="130" width="110" height="24" rx="5"/>
+<path d="M 160.0 142.0 H 405 V 144 H 426"/><circle cx="426" cy="144" r="2.5" class="line-dot"/>
+<text x="435" y="140" class="mark-label">最近充电提示</text>
+<text x="435" y="164" class="mark-value">13<tspan class="mark-unit"> px</tspan></text></g><g class="annotation"><rect x="36.0" y="156" width="343" height="38" rx="5"/>
+<path d="M 379.0 175.0 H 409 V 198 H 426"/><circle cx="426" cy="198" r="2.5" class="line-dot"/>
+<text x="435" y="194" class="mark-label">终端包租说明</text>
+<text x="435" y="218" class="mark-value">13<tspan class="mark-unit"> px</tspan></text></g></svg></div></figure></div>
+    <p class="module-note">「空闲中」仍为 14，终端名称仍为 18，「快充」标签仍为 12.5。</p></div></section><section id="terminal-price" class="module card"><div class="module-head"><div class="module-heading"><span class="module-index">02</span><div><h2>价格信息</h2><p>主标题、当前时段说明与时间加大一号</p></div></div></div>
+    <div class="module-body"><div class="compare-grid"><figure class="figure-card old"><figcaption><span class="version-label"><i></i>原设计</span><span class="version-detail">原字号</span></figcaption>
+<div class="figure-board" style="aspect-ratio:584/266">
+<img class="design-image" src="assets/terminal-price-old@3x.png" width="1077" height="510" style="left:4.794520547945205%;top:21.052631578947366%;width:61.47260273972602%;height:63.90977443609023%" alt="价格信息 · 原设计 · Figma 3倍原图">
+<svg class="overlay" viewBox="0 0 584 266" aria-label="价格信息字号标注"><g class="annotation"><rect x="36.0" y="65" width="68" height="26" rx="5"/>
+<path d="M 70.0 65 V 25 H 411 V 28 H 426"/><circle cx="426" cy="28" r="2.5" class="line-dot"/>
+<text x="435" y="24" class="mark-label">卡片主标题</text>
+<text x="435" y="48" class="mark-value">15<tspan class="mark-unit"> px</tspan></text></g><g class="annotation"><rect x="244.0" y="66.5" width="125" height="23.0" rx="5"/>
+<path d="M 369.0 78.0 H 409 V 80 H 426"/><circle cx="426" cy="80" r="2.5" class="line-dot"/>
+<text x="435" y="76" class="mark-label">当前时段与时间</text>
+<text x="435" y="100" class="mark-value">12<tspan class="mark-unit"> px</tspan></text></g></svg></div></figure><figure class="figure-card new"><figcaption><span class="version-label"><i></i>视觉校准后</span><span class="version-detail">字号 +1</span></figcaption>
+<div class="figure-board" style="aspect-ratio:584/266">
+<img class="design-image" src="assets/terminal-price-new@3x.png" width="1077" height="510" style="left:4.794520547945205%;top:21.052631578947366%;width:61.47260273972602%;height:63.90977443609023%" alt="价格信息 · 视觉校准后 · Figma 3倍原图">
+<svg class="overlay" viewBox="0 0 584 266" aria-label="价格信息字号标注"><g class="annotation"><rect x="36.0" y="65" width="72" height="26" rx="5"/>
+<path d="M 72.0 65 V 25 H 411 V 28 H 426"/><circle cx="426" cy="28" r="2.5" class="line-dot"/>
+<text x="435" y="24" class="mark-label">卡片主标题</text>
+<text x="435" y="48" class="mark-value">16<tspan class="mark-unit"> px</tspan></text></g><g class="annotation"><rect x="234.0" y="66" width="135" height="24" rx="5"/>
+<path d="M 369.0 78.0 H 409 V 80 H 426"/><circle cx="426" cy="80" r="2.5" class="line-dot"/>
+<text x="435" y="76" class="mark-label">当前时段与时间</text>
+<text x="435" y="100" class="mark-value">13<tspan class="mark-unit"> px</tspan></text></g></svg></div></figure></div>
+    <p class="module-note">单位、充电价与会员价数字、开通会员横幅均维持原字号。</p></div></section><section id="terminal-parking" class="module card"><div class="module-head"><div class="module-heading"><span class="module-index">03</span><div><h2>停车参考价</h2><p>主标题、停车收费规则与补充说明加大一号</p></div></div></div>
+    <div class="module-body"><div class="compare-grid"><figure class="figure-card old"><figcaption><span class="version-label"><i></i>原设计</span><span class="version-detail">原字号</span></figcaption>
+<div class="figure-board" style="aspect-ratio:584/224">
+<img class="design-image" src="assets/terminal-parking-old@3x.png" width="1077" height="378" style="left:4.794520547945205%;top:25.0%;width:61.47260273972602%;height:56.25%" alt="停车参考价 · 原设计 · Figma 3倍原图">
+<svg class="overlay" viewBox="0 0 584 224" aria-label="停车参考价字号标注"><g class="annotation"><rect x="54.0" y="65" width="83" height="26" rx="5"/>
+<path d="M 95.5 65 V 25 H 411 V 28 H 426"/><circle cx="426" cy="28" r="2.5" class="line-dot"/>
+<text x="435" y="24" class="mark-label">卡片主标题</text>
+<text x="435" y="48" class="mark-value">15<tspan class="mark-unit"> px</tspan></text></g><g class="annotation"><rect x="36.0" y="89" width="331" height="40" rx="5"/>
+<path d="M 367.0 109.0 H 409 V 104 H 426"/><circle cx="426" cy="104" r="2.5" class="line-dot"/>
+<text x="435" y="100" class="mark-label">停车收费说明</text>
+<text x="435" y="124" class="mark-value">12<tspan class="mark-unit"> px</tspan></text></g></svg></div></figure><figure class="figure-card new"><figcaption><span class="version-label"><i></i>视觉校准后</span><span class="version-detail">字号 +1</span></figcaption>
+<div class="figure-board" style="aspect-ratio:584/224">
+<img class="design-image" src="assets/terminal-parking-new@3x.png" width="1077" height="384" style="left:4.794520547945205%;top:25.0%;width:61.47260273972602%;height:57.14285714285714%" alt="停车参考价 · 视觉校准后 · Figma 3倍原图">
+<svg class="overlay" viewBox="0 0 584 224" aria-label="停车参考价字号标注"><g class="annotation"><rect x="54.0" y="65" width="88" height="26" rx="5"/>
+<path d="M 98.0 65 V 25 H 411 V 28 H 426"/><circle cx="426" cy="28" r="2.5" class="line-dot"/>
+<text x="435" y="24" class="mark-label">卡片主标题</text>
+<text x="435" y="48" class="mark-value">16<tspan class="mark-unit"> px</tspan></text></g><g class="annotation"><rect x="36.0" y="89" width="331" height="42" rx="5"/>
+<path d="M 367.0 110.0 H 409 V 104 H 426"/><circle cx="426" cy="104" r="2.5" class="line-dot"/>
+<text x="435" y="100" class="mark-label">停车收费说明</text>
+<text x="435" y="124" class="mark-value">13<tspan class="mark-unit"> px</tspan></text></g></svg></div></figure></div>
+    <p class="module-note">「充电爱车」仍为 14，车牌信息仍为 12。</p></div></section><section id="terminal-overtime" class="module card"><div class="module-head"><div class="module-heading"><span class="module-index">04</span><div><h2>超时占用费</h2><p>主标题、收费规则与不收取状态分别校准</p></div></div></div>
+    <div class="module-body"><div class="compare-grid"><figure class="figure-card old"><figcaption><span class="version-label"><i></i>原设计</span><span class="version-detail">原字号</span></figcaption>
+<div class="figure-board" style="aspect-ratio:584/213">
+<img class="design-image" src="assets/terminal-overtime-old@3x.png" width="1077" height="351" style="left:4.794520547945205%;top:26.291079812206576%;width:61.47260273972602%;height:54.929577464788736%" alt="超时占用费 · 原设计 · Figma 3倍原图">
+<svg class="overlay" viewBox="0 0 584 213" aria-label="超时占用费字号标注"><g class="annotation"><rect x="54.0" y="65.5" width="83" height="26.0" rx="5"/>
+<path d="M 95.5 65.5 V 25 H 411 V 28 H 426"/><circle cx="426" cy="28" r="2.5" class="line-dot"/>
+<text x="435" y="24" class="mark-label">卡片主标题</text>
+<text x="435" y="48" class="mark-value">15<tspan class="mark-unit"> px</tspan></text></g><g class="annotation"><rect x="36.0" y="89.5" width="331" height="23.0" rx="5"/>
+<path d="M 367.0 101.0 H 409 V 94 H 426"/><circle cx="426" cy="94" r="2.5" class="line-dot"/>
+<text x="435" y="90" class="mark-label">超时费收费规则</text>
+<text x="435" y="114" class="mark-value">12<tspan class="mark-unit"> px</tspan></text></g><g class="annotation"><rect x="335.0" y="139" width="44" height="23" rx="5"/>
+<path d="M 379.0 150.5 H 409 V 150 H 426"/><circle cx="426" cy="150" r="2.5" class="line-dot"/>
+<text x="435" y="146" class="mark-label">不收取状态</text>
+<text x="435" y="170" class="mark-value">12<tspan class="mark-unit"> px</tspan></text></g></svg></div></figure><figure class="figure-card new"><figcaption><span class="version-label"><i></i>视觉校准后</span><span class="version-detail">字号 +1</span></figcaption>
+<div class="figure-board" style="aspect-ratio:584/213">
+<img class="design-image" src="assets/terminal-overtime-new@3x.png" width="1077" height="351" style="left:4.794520547945205%;top:26.291079812206576%;width:61.47260273972602%;height:54.929577464788736%" alt="超时占用费 · 视觉校准后 · Figma 3倍原图">
+<svg class="overlay" viewBox="0 0 584 213" aria-label="超时占用费字号标注"><g class="annotation"><rect x="54.0" y="65" width="88" height="26" rx="5"/>
+<path d="M 98.0 65 V 25 H 411 V 28 H 426"/><circle cx="426" cy="28" r="2.5" class="line-dot"/>
+<text x="435" y="24" class="mark-label">卡片主标题</text>
+<text x="435" y="48" class="mark-value">16<tspan class="mark-unit"> px</tspan></text></g><g class="annotation"><rect x="36.0" y="89" width="331" height="24" rx="5"/>
+<path d="M 367.0 101.0 H 409 V 94 H 426"/><circle cx="426" cy="94" r="2.5" class="line-dot"/>
+<text x="435" y="90" class="mark-label">超时费收费规则</text>
+<text x="435" y="114" class="mark-value">13<tspan class="mark-unit"> px</tspan></text></g><g class="annotation"><rect x="332.0" y="138.5" width="47" height="24.0" rx="5"/>
+<path d="M 379.0 150.5 H 409 V 150 H 426"/><circle cx="426" cy="150" r="2.5" class="line-dot"/>
+<text x="435" y="146" class="mark-label">不收取状态</text>
+<text x="435" y="170" class="mark-value">13<tspan class="mark-unit"> px</tspan></text></g></svg></div></figure></div>
+    <p class="module-note">上方为收费状态，下方为不收取状态；两种状态采用相同的标题字号。</p></div></section><section id="terminal-coupons" class="module card"><div class="module-head"><div class="module-heading"><span class="module-index">05</span><div><h2>卡券与套餐</h2><p>主标题、套餐与卡券右侧摘要加大一号</p></div></div></div>
+    <div class="module-body"><div class="compare-grid"><figure class="figure-card old"><figcaption><span class="version-label"><i></i>原设计</span><span class="version-detail">原字号</span></figcaption>
+<div class="figure-board" style="aspect-ratio:584/205">
+<img class="design-image" src="assets/terminal-coupons-old@3x.png" width="1077" height="327" style="left:4.794520547945205%;top:27.31707317073171%;width:61.47260273972602%;height:53.170731707317074%" alt="卡券与套餐 · 原设计 · Figma 3倍原图">
+<svg class="overlay" viewBox="0 0 584 205" aria-label="卡券与套餐字号标注"><g class="annotation"><rect x="36.0" y="65" width="68" height="27" rx="5"/>
+<path d="M 70.0 65 V 25 H 411 V 28 H 426"/><circle cx="426" cy="28" r="2.5" class="line-dot"/>
+<text x="435" y="24" class="mark-label">卡片主标题</text>
+<text x="435" y="48" class="mark-value">15<tspan class="mark-unit"> px</tspan></text></g><g class="annotation"><rect x="235.0" y="67" width="134" height="23" rx="5"/>
+<path d="M 369.0 78.5 H 409 V 74 H 426"/><circle cx="426" cy="74" r="2.5" class="line-dot"/>
+<text x="435" y="70" class="mark-label">套餐摘要信息</text>
+<text x="435" y="94" class="mark-value">12<tspan class="mark-unit"> px</tspan></text></g><g class="annotation"><rect x="318.0" y="121.5" width="51" height="23.0" rx="5"/>
+<path d="M 369.0 133.0 H 409 V 132 H 426"/><circle cx="426" cy="132" r="2.5" class="line-dot"/>
+<text x="435" y="128" class="mark-label">卡券可用摘要</text>
+<text x="435" y="152" class="mark-value">12<tspan class="mark-unit"> px</tspan></text></g></svg></div></figure><figure class="figure-card new"><figcaption><span class="version-label"><i></i>视觉校准后</span><span class="version-detail">字号 +1</span></figcaption>
+<div class="figure-board" style="aspect-ratio:584/205">
+<img class="design-image" src="assets/terminal-coupons-new@3x.png" width="1077" height="333" style="left:4.794520547945205%;top:27.31707317073171%;width:61.47260273972602%;height:54.146341463414636%" alt="卡券与套餐 · 视觉校准后 · Figma 3倍原图">
+<svg class="overlay" viewBox="0 0 584 205" aria-label="卡券与套餐字号标注"><g class="annotation"><rect x="36.0" y="65" width="72" height="28" rx="5"/>
+<path d="M 72.0 65 V 25 H 411 V 28 H 426"/><circle cx="426" cy="28" r="2.5" class="line-dot"/>
+<text x="435" y="24" class="mark-label">卡片主标题</text>
+<text x="435" y="48" class="mark-value">16<tspan class="mark-unit"> px</tspan></text></g><g class="annotation"><rect x="225.0" y="67" width="144" height="24" rx="5"/>
+<path d="M 369.0 79.0 H 409 V 74 H 426"/><circle cx="426" cy="74" r="2.5" class="line-dot"/>
+<text x="435" y="70" class="mark-label">套餐摘要信息</text>
+<text x="435" y="94" class="mark-value">13<tspan class="mark-unit"> px</tspan></text></g><g class="annotation"><rect x="314.0" y="122.5" width="55" height="24.0" rx="5"/>
+<path d="M 369.0 134.5 H 409 V 132 H 426"/><circle cx="426" cy="132" r="2.5" class="line-dot"/>
+<text x="435" y="128" class="mark-label">卡券可用摘要</text>
+<text x="435" y="152" class="mark-value">13<tspan class="mark-unit"> px</tspan></text></g></svg></div></figure></div>
+    <p class="module-note">自动抵扣说明与「设置」仍为 12。</p></div></section><section id="terminal-payment" class="module card"><div class="module-head"><div class="module-heading"><span class="module-index">06</span><div><h2>支付方式</h2><p>主标题、支付方式选择标签与辅助信息分别校准</p></div></div></div>
+    <div class="module-body"><div class="compare-grid"><figure class="figure-card old"><figcaption><span class="version-label"><i></i>原设计</span><span class="version-detail">原字号</span></figcaption>
+<div class="figure-board" style="aspect-ratio:584/573">
+<img class="design-image" src="assets/terminal-payment-old@3x.png" width="1077" height="1428" style="left:4.794520547945205%;top:9.773123909249563%;width:61.47260273972602%;height:83.07155322862128%" alt="支付方式 · 原设计 · Figma 3倍原图">
+<svg class="overlay" viewBox="0 0 584 573" aria-label="支付方式字号标注"><g class="annotation"><rect x="36.0" y="68.5" width="68" height="27.0" rx="5"/>
+<path d="M 70.0 68.5 V 25 H 411 V 28 H 426"/><circle cx="426" cy="28" r="2.5" class="line-dot"/>
+<text x="435" y="24" class="mark-label">卡片主标题</text>
+<text x="435" y="48" class="mark-value">15<tspan class="mark-unit"> px</tspan></text></g><g class="annotation"><rect x="327.0" y="70.5" width="44" height="23.0" rx="5"/>
+<path d="M 371.0 82.0 H 409 V 81 H 426"/><circle cx="426" cy="81" r="2.5" class="line-dot"/>
+<text x="435" y="77" class="mark-label">支付方式选择标签</text>
+<text x="435" y="101" class="mark-value">12<tspan class="mark-unit"> px</tspan></text></g><g class="annotation"><rect x="277.0" y="118.5" width="92" height="23.0" rx="5"/>
+<path d="M 369.0 130.0 H 409 V 134 H 426"/><circle cx="426" cy="134" r="2.5" class="line-dot"/>
+<text x="435" y="130" class="mark-label">预付金额选择入口</text>
+<text x="435" y="154" class="mark-value">12<tspan class="mark-unit"> px</tspan></text></g><g class="annotation"><rect x="58.0" y="274.5" width="56" height="23.0" rx="5"/>
+<path d="M 86.0 274.5 V 266 H 409 V 262 H 426"/><circle cx="426" cy="262" r="2.5" class="line-dot"/>
+<text x="435" y="258" class="mark-label">限定金额说明</text>
+<text x="435" y="282" class="mark-value">12<tspan class="mark-unit"> px</tspan></text></g><g class="annotation"><rect x="36.0" y="334" width="343" height="23" rx="5"/>
+<path d="M 379.0 345.5 H 409 V 341 H 426"/><circle cx="426" cy="341" r="2.5" class="line-dot"/>
+<text x="435" y="337" class="mark-label">余额不足停充提示</text>
+<text x="435" y="361" class="mark-value">12<tspan class="mark-unit"> px</tspan></text></g><g class="annotation"><rect x="313.0" y="444" width="56" height="23" rx="5"/>
+<path d="M 369.0 455.5 H 409 V 449 H 426"/><circle cx="426" cy="449" r="2.5" class="line-dot"/>
+<text x="435" y="445" class="mark-label">切换账户入口</text>
+<text x="435" y="469" class="mark-value">12<tspan class="mark-unit"> px</tspan></text></g></svg></div></figure><figure class="figure-card new"><figcaption><span class="version-label"><i></i>视觉校准后</span><span class="version-detail">字号 +1</span></figcaption>
+<div class="figure-board" style="aspect-ratio:584/573">
+<img class="design-image" src="assets/terminal-payment-new@3x.png" width="1077" height="1431" style="left:4.794520547945205%;top:9.773123909249563%;width:61.47260273972602%;height:83.24607329842932%" alt="支付方式 · 视觉校准后 · Figma 3倍原图">
+<svg class="overlay" viewBox="0 0 584 573" aria-label="支付方式字号标注"><g class="annotation"><rect x="36.0" y="68" width="72" height="28" rx="5"/>
+<path d="M 72.0 68 V 25 H 411 V 28 H 426"/><circle cx="426" cy="28" r="2.5" class="line-dot"/>
+<text x="435" y="24" class="mark-label">卡片主标题</text>
+<text x="435" y="48" class="mark-value">16<tspan class="mark-unit"> px</tspan></text></g><g class="annotation"><rect x="324.0" y="70" width="47" height="24" rx="5"/>
+<path d="M 371.0 82.0 H 409 V 81 H 426"/><circle cx="426" cy="81" r="2.5" class="line-dot"/>
+<text x="435" y="77" class="mark-label">支付方式选择标签</text>
+<text x="435" y="101" class="mark-value">13<tspan class="mark-unit"> px</tspan></text></g><g class="annotation"><rect x="270.0" y="118" width="99" height="24" rx="5"/>
+<path d="M 369.0 130.0 H 409 V 134 H 426"/><circle cx="426" cy="134" r="2.5" class="line-dot"/>
+<text x="435" y="130" class="mark-label">预付金额选择入口</text>
+<text x="435" y="154" class="mark-value">13<tspan class="mark-unit"> px</tspan></text></g><g class="annotation"><rect x="58.0" y="274" width="60" height="24" rx="5"/>
+<path d="M 88.0 274 V 266 H 409 V 262 H 426"/><circle cx="426" cy="262" r="2.5" class="line-dot"/>
+<text x="435" y="258" class="mark-label">限定金额说明</text>
+<text x="435" y="282" class="mark-value">13<tspan class="mark-unit"> px</tspan></text></g><g class="annotation"><rect x="36.0" y="334" width="343" height="24" rx="5"/>
+<path d="M 379.0 346.0 H 409 V 341 H 426"/><circle cx="426" cy="341" r="2.5" class="line-dot"/>
+<text x="435" y="337" class="mark-label">余额不足停充提示</text>
+<text x="435" y="361" class="mark-value">13<tspan class="mark-unit"> px</tspan></text></g><g class="annotation"><rect x="309.0" y="444.5" width="60" height="24.0" rx="5"/>
+<path d="M 369.0 456.5 H 409 V 449 H 426"/><circle cx="426" cy="449" r="2.5" class="line-dot"/>
+<text x="435" y="445" class="mark-label">切换账户入口</text>
+<text x="435" y="469" class="mark-value">13<tspan class="mark-unit"> px</tspan></text></g></svg></div></figure></div>
+    <p class="module-note">三种支付状态按原稿顺序展示。企业账户场景横向列表屏外的「余额付」在当前稿中仍为 12，开发时也应按同类标签统一为 13。可用余额、金额数字、余额构成、企业名称及账户余额维持原字号。</p></div></section><section id="terminal-invoice" class="module card"><div class="module-head"><div class="module-heading"><span class="module-index">07</span><div><h2>发票信息</h2><p>主标题、发票类型与抬头摘要加大一号</p></div></div></div>
+    <div class="module-body"><div class="compare-grid"><figure class="figure-card old"><figcaption><span class="version-label"><i></i>原设计</span><span class="version-detail">原字号</span></figcaption>
+<div class="figure-board" style="aspect-ratio:584/160">
+<img class="design-image" src="assets/terminal-invoice-old@3x.png" width="1077" height="192" style="left:4.794520547945205%;top:35.0%;width:61.47260273972602%;height:40.0%" alt="发票信息 · 原设计 · Figma 3倍原图">
+<svg class="overlay" viewBox="0 0 584 160" aria-label="发票信息字号标注"><g class="annotation"><rect x="36.0" y="65" width="38" height="27" rx="5"/>
+<path d="M 55.0 65 V 25 H 411 V 28 H 426"/><circle cx="426" cy="28" r="2.5" class="line-dot"/>
+<text x="435" y="24" class="mark-label">卡片主标题</text>
+<text x="435" y="48" class="mark-value">15<tspan class="mark-unit"> px</tspan></text></g><g class="annotation"><rect x="307.0" y="70" width="52" height="17" rx="5"/>
+<path d="M 359.0 78.5 H 409 V 93 H 426"/><circle cx="426" cy="93" r="2.5" class="line-dot"/>
+<text x="435" y="89" class="mark-label">发票类型与抬头</text>
+<text x="435" y="113" class="mark-value">12<tspan class="mark-unit"> px</tspan></text></g></svg></div></figure><figure class="figure-card new"><figcaption><span class="version-label"><i></i>视觉校准后</span><span class="version-detail">字号 +1</span></figcaption>
+<div class="figure-board" style="aspect-ratio:584/160">
+<img class="design-image" src="assets/terminal-invoice-new@3x.png" width="1077" height="195" style="left:4.794520547945205%;top:35.0%;width:61.47260273972602%;height:40.625%" alt="发票信息 · 视觉校准后 · Figma 3倍原图">
+<svg class="overlay" viewBox="0 0 584 160" aria-label="发票信息字号标注"><g class="annotation"><rect x="36.0" y="65" width="40" height="28" rx="5"/>
+<path d="M 56.0 65 V 25 H 411 V 28 H 426"/><circle cx="426" cy="28" r="2.5" class="line-dot"/>
+<text x="435" y="24" class="mark-label">卡片主标题</text>
+<text x="435" y="48" class="mark-value">16<tspan class="mark-unit"> px</tspan></text></g><g class="annotation"><rect x="302.0" y="70" width="57" height="18" rx="5"/>
+<path d="M 359.0 79.0 H 409 V 93 H 426"/><circle cx="426" cy="93" r="2.5" class="line-dot"/>
+<text x="435" y="89" class="mark-label">发票类型与抬头</text>
+<text x="435" y="113" class="mark-value">13<tspan class="mark-unit"> px</tspan></text></g></svg></div></figure></div>
+    <p class="module-note">当前校准稿的末尾右括号「)」仍为 12；自动开票说明仍为 12。</p></div></section><section id="terminal-insurance" class="module card"><div class="module-head"><div class="module-heading"><span class="module-index">08</span><div><h2>特无忧服务</h2><p>服务名称由 14 调整为 15</p></div></div></div>
+    <div class="module-body"><div class="compare-grid"><figure class="figure-card old"><figcaption><span class="version-label"><i></i>原设计</span><span class="version-detail">原字号</span></figcaption>
+<div class="figure-board" style="aspect-ratio:584/177">
+<img class="design-image" src="assets/terminal-insurance-old@3x.png" width="1077" height="240" style="left:4.794520547945205%;top:31.63841807909605%;width:61.47260273972602%;height:45.19774011299435%" alt="特无忧服务 · 原设计 · Figma 3倍原图">
+<svg class="overlay" viewBox="0 0 584 177" aria-label="特无忧服务字号标注"><g class="annotation"><rect x="86.0" y="65" width="78" height="26" rx="5"/>
+<path d="M 125.0 65 V 25 H 411 V 32 H 426"/><circle cx="426" cy="32" r="2.5" class="line-dot"/>
+<text x="435" y="28" class="mark-label">特无忧服务名称</text>
+<text x="435" y="52" class="mark-value">14<tspan class="mark-unit"> px</tspan></text></g></svg></div></figure><figure class="figure-card new"><figcaption><span class="version-label"><i></i>视觉校准后</span><span class="version-detail">字号 +1</span></figcaption>
+<div class="figure-board" style="aspect-ratio:584/177">
+<img class="design-image" src="assets/terminal-insurance-new@3x.png" width="1077" height="243" style="left:4.794520547945205%;top:31.63841807909605%;width:61.47260273972602%;height:45.76271186440678%" alt="特无忧服务 · 视觉校准后 · Figma 3倍原图">
+<svg class="overlay" viewBox="0 0 584 177" aria-label="特无忧服务字号标注"><g class="annotation"><rect x="86.0" y="65" width="83" height="27" rx="5"/>
+<path d="M 127.5 65 V 25 H 411 V 32 H 426"/><circle cx="426" cy="32" r="2.5" class="line-dot"/>
+<text x="435" y="28" class="mark-label">特无忧服务名称</text>
+<text x="435" y="52" class="mark-value">15<tspan class="mark-unit"> px</tspan></text></g></svg></div></figure></div>
+    <p class="module-note">权益说明仍为 12；划线价、购买金额、人民币符号与「/次」均维持原字号。</p></div></section></main></div>
+    <script>
+const links=[...document.querySelectorAll('.module-link')],sections=[...document.querySelectorAll('.module')];
+const navigation=document.querySelector('.page-navigation');
+function syncNav(){
+  let current=sections[0];
+  const threshold=navigation.getBoundingClientRect().height+26;
+  for(const section of sections){if(section.getBoundingClientRect().top<=threshold)current=section;}
+  if(scrollY>0&&scrollY+innerHeight>=document.documentElement.scrollHeight-2)current=sections[sections.length-1];
+  links.forEach(a=>{const active=a.hash==='#'+current.id;a.classList.toggle('active',active);if(active)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current');});
+}
+new ResizeObserver(()=>{
+  document.documentElement.style.setProperty('--navigation-height',Math.ceil(navigation.getBoundingClientRect().height)+'px');
+  syncNav();
+}).observe(navigation);
+let scheduled=false;addEventListener('scroll',()=>{if(!scheduled){scheduled=true;requestAnimationFrame(()=>{syncNav();scheduled=false;});}},{passive:true});syncNav();
+</script></body></html>
